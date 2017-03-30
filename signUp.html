@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="myStyleFile/myStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZq3N4iOcyQ0Bi7UC2FukTPMWbULtBuFo&libraries=places"></script>
+
+
+    <title>FindTheLoc</title>
+</head>
+
+<body>
+    
+      <div> 
+        <img class="menu-img" tabindex="1" src="myStyleFile/images/menu.png" alt="Menu" title="Menu">
+        <ul class="navigation">
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="signIn.html">Σύνδεση</a></li>
+            <li><a href="signUp.html">Εγγραφή</a></li>
+        </ul>
+     </div>    
+    <div class="div-signUp">
+            <h2>Εγγραφή</h2>
+           
+        <form id="signUp-Fomm">
+            <p>Όνομα:</p><input type="text" name="name" required /> <br>
+            <p>Επίθετο:</p><input type="text" name="lastname" required /><br>
+            <p>Κωδικός:</p><input type="password" name="password" required /><br>
+            <p>Ημερομηνία Γέννησης:</p><input type="date" name="dateBirthday" required /><br>
+            <p>Τηλέφωνο:</p><input type="tel" name="telephone" required /><br>
+            <p>Εmail:</p><input type="email" name="email" required /><br>
+            <p>Χώρα:</p><input type="text" name="country" required /><br>
+            <p>Διεύθυνση:</p><input type="text" name="address" required /><br>
+            <button type="submit">Υποβολή</button>
+        </form>
+    </div>  
+    <footer><p>FindTheLoc Copyrights 2017</p></footer>
+    <script type="text/javascript" src="javascriptFiles/app.js"></script>
+    <script type="text/javascript" src="javascriptFiles/Controllers/MainController.js"></script>
+</body>
+
+</html>

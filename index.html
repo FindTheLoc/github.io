@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="myStyleFile/myStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZq3N4iOcyQ0Bi7UC2FukTPMWbULtBuFo&libraries=places"></script>
+
+
+    <title>FindTheLoc</title>
+</head>
+
+<body ng-app='myApp'>
+    <div ng-controller='MainController'>
+        <div>
+        <img class="menu-img" tabindex="1" src="myStyleFile/images/menu.png" alt="Menu" title="Menu">
+            <ul class="navigation">   
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="signIn.html">Σύνδεση</a></li>
+                <li><a href="signUp.html">Εγγραφή</a></li>
+            </ul>
+        </div>
+        <h1>EXPLORE THE WORLD</h1>
+        <form class="search">
+            <input type="search" id="txtautocomplete" placeholder="Πληκτρολογήστε μία τοποθεσία" required />
+            <br/>
+        </form>
+     <!--   <div id="checkboxes">
+
+                    <label>Φίλτρο Αναζήτησης</label> <br>
+                    <ul>
+                        <li><input type="checkbox"> Τράπεζες</li>
+                        <li><input type="checkbox"> Αεροδρόμια</li>
+                        <li><input type="checkbox"> Μουσεία</li>
+                        <li><input type="checkbox"> Νοσοκομεία</li>
+                        <li><input type="checkbox"> Γκαλερί</li>
+                        <li><input type="checkbox"> Μπάρ</li>
+                        <li><input type="checkbox"> Καφετέριες</li>
+                        <li><input type="checkbox"> Νοσοκομεία</li>
+                        <li><input type="checkbox"> Εκκλησίες</li>
+                        <li><input type="checkbox"> Βενζινάδικα</li>
+                        <li><input type="checkbox"> Γυμναστήρια</li>
+                        <li><input type="checkbox"> Στάσεις ταξί</li>
+                        <li><input type="checkbox"> Εστιατόρια</li>
+                        <li><input type="checkbox"> Γήπεδα</li>
+                        <li><input type="checkbox"> Πανεπιστήμια</li>
+                    </ul>
+
+        </div> -->
+
+        <div class="maincontainer">
+
+            <div class="pic-container" data-ng-repeat="place in places">
+
+                <p>{{place.name}}</p>
+                <img data-ng-src="{{place.img}}" />
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>FindTheLoc Copyrights 2017</p>
+    </footer>
+    <script type="text/javascript" src="javascriptFiles/app.js"></script>
+    <script type="text/javascript" src="javascriptFiles/Controllers/MainController.js"></script>
+</body>
+
+</html>
