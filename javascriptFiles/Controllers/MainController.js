@@ -1,4 +1,3 @@
-
 /*global angular */
 
 app.controller('MainController', ['$scope', function ($scope) {
@@ -47,7 +46,10 @@ app.controller('MainController', ['$scope', function ($scope) {
 
                     if (place.photos != null) {
 
-                        temp.img = place.photos[0].getUrl({'maxWidth': place.photos[0].width, 'maxHeight': place.photos[0].height});                
+                        temp.img = place.photos[0].getUrl({
+                            'maxWidth': place.photos[0].width,
+                            'maxHeight': place.photos[0].height
+                        });
                         //temp.img = place.photos[0].getUrl({'maxWidth': 200,'maxHeight': 200});
 
                     }
