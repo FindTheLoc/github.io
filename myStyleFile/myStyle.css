@@ -347,6 +347,15 @@ footer p {
 }
 
 @media all and (max-width: 850px) {
+    
+     body{
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        background-color: transparent !important;
+  
+    }
+    
     .navigation {
         justify-content: space-around;
     }
@@ -393,6 +402,14 @@ footer p {
 
 @media all and (max-width: 400px) {
    
+    body{
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        background-color: transparent !important;
+  
+    }
+    
      .navigation {
         position: fixed;
         left: 0;
