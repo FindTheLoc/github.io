@@ -21,22 +21,23 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-   
+    
+     
 }
 
-
-
-
-
-
-body {
-    margin: 0 0 50px;
-   /* background-image: url("images/greece.jpg");
+video img {
+    
+    visibility:hidden;
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover; */
+    -o-background-size: cover; 
+    
+}
+
+body {
+    margin: 0 0 50px;
     
 }
 
@@ -377,6 +378,12 @@ footer p {
   
     }
     
+    video img {
+    
+    visibility: visible;
+   
+    }
+    
     .navigation {
         justify-content: space-around;
     }
@@ -434,6 +441,11 @@ footer p {
         background-attachment: fixed !important;
         background-color: transparent !important;
   
+    }
+    
+    video img {
+    
+    visibility:visible; 
     }
     
      .navigation {
