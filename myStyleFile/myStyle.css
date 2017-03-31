@@ -358,15 +358,21 @@ video {
 }
 
 @media all and (max-width: 850px) {
-     body {
-        background: url(images/greece.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        -webkit-background-size:cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        width: 100%;
-        height: 100%;
+     body { 
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(images/greece.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      
     }
     
     #bgvid {
@@ -421,15 +427,21 @@ video {
 }
 
 @media all and (max-width: 400px) {
-    body {
-        background: url(images/greece.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        -webkit-background-size:cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        width: 100%;
-        height: 100%;
+    body { 
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(images/greece.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      
     }
     
     #bgvid {
