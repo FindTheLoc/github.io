@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="myStyleFile/myStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZq3N4iOcyQ0Bi7UC2FukTPMWbULtBuFo&libraries=places"></script>
 
@@ -12,30 +12,34 @@
 </head>
 
 <body>
-    
-      <div> 
+  <video  id="bgvid" playsinline autoplay muted loop>
+        <source src="myStyleFile/images/screenVideo.mp4" type="video/mp4">
+    </video>
+    <div>
         <img class="menu-img" tabindex="1" src="myStyleFile/images/menu.png" alt="Menu" title="Menu">
         <ul class="navigation">
             <li><a href="index.html">Αρχική</a></li>
             <li><a href="signIn.html">Σύνδεση</a></li>
             <li><a href="signUp.html">Εγγραφή</a></li>
         </ul>
-     </div>   
-    
+    </div>
+
     <div class="signIn-form">
-        <img src="myStyleFile/images/iconuser.png" >
-            <h2>Σύνδεση</h2>
-           
+        <img src="myStyleFile/images/login.png">
+        <h2>Σύνδεση</h2>
+
         <form>
             <input type="text" name="username" placeholder="Όνομα Χρήστη" required /> <br>
             <input type="password" name="password" placeholder="Κωδικός Χρήστη" required /><br>
             <br>
             <a href="signUp.html">Δημιουργία λογαρισμού</a>
-            
+
             <button type="submit">Σύνδεση</button>
         </form>
-    </div>  
-    <footer><p>FindTheLoc Copyrights 2017</p></footer>
+    </div>
+    <footer>
+        <p>FindTheLoc Copyrights 2017</p>
+    </footer>
     <script type="text/javascript" src="javascriptFiles/app.js"></script>
     <script type="text/javascript" src="javascriptFiles/Controllers/MainController.js"></script>
 </body>
