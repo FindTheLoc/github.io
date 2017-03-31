@@ -1,4 +1,4 @@
-@font-face {
+    @font-face {
     font-family: "Fira Sans", "GELIconsFull";
     src: url("http://fonts.gstatic.com/s/firasans/v5/5jAMGMsBXS6xUYEytGcZdD8E0i7KZn-EPnyo3HZu7kw.woff");
     src: url('fonts/gel-news-icons-v3/gelnewsicons-regular-webfont.eot');
@@ -9,10 +9,8 @@ html {
     min-height: 100%;
 }
 
-
 body {
     margin: 0 0 50px;
-    
 }
 
 .navigation {
@@ -211,7 +209,7 @@ footer p {
     margin: auto;
     margin-top: 4em;
     margin-bottom: 5em;
-    background-color:floralwhite;
+    background-color: floralwhite;
     border-radius: 15px;
     border: 12px solid rgb(255, 255, 255, 0.5;
     );
@@ -277,7 +275,7 @@ footer p {
     margin-bottom: 4em;
     padding-top: 2em;
     text-align: center;
-    background-color:floralwhite;
+    background-color: floralwhite;
     opacity: 0.9;
     width: 35%;
     border-radius: 15px;
@@ -294,7 +292,6 @@ footer p {
     display: flex;
     height: 20%;
     width: 25%;
-    
 }
 
 .signIn-form input {
@@ -342,9 +339,7 @@ footer p {
     color: dimgrey;
 }
 
-
-
-video { 
+video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -354,17 +349,21 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background:transparent url('/images/screenVideo.png') no-repeat 0 0;
+    background: transparent url('/images/screenVideo.png') no-repeat 0 0;
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover; 
+    -o-background-size: cover;
 }
 
-
 @media all and (max-width: 850px) {
-
+    html {
+        background: url(images/greece.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
     .navigation {
         justify-content: space-around;
     }
@@ -407,17 +406,20 @@ video {
         height: 2em;
         font-size: 1.5em;
     }
-    
     .signIn-form img {
         width: 25%;
-        height:14%;
+        height: 14%;
     }
 }
 
 @media all and (max-width: 400px) {
-   
-
-     .navigation {
+    html {
+        background: url(images/greece.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+    .navigation {
         position: fixed;
         left: 0;
         top: 10px;
@@ -443,7 +445,7 @@ video {
     }
     .navigation {
         display: inline-block;
-        margin:0;
+        margin: 0;
         padding: 5px;
         width: 120px;
         background-color: crimson;
@@ -462,11 +464,9 @@ video {
         color: white;
         text-decoration: none;
     }
-    
     .search {
         width: 90%;
         margin-bottom: 3em;
-        
     }
     #txtautocomplete {
         height: 2.5em;
@@ -529,10 +529,10 @@ video {
         height: 1.1em;
         font-size: 1.1em;
     }
-    
     .signIn-form img {
         width: 25%;
-        height:15%;
+        height: 15%;
     }
+   
    
 }
