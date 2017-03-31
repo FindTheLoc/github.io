@@ -9,16 +9,35 @@ html {
     min-height: 100%;
 }
 
+
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+   
+}
+
+
+
+
+
+
 body {
-    background-image: url("images/greece.jpg");
-    background-attachment: fixed;
     margin: 0 0 50px;
+   /* background-image: url("images/greece.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
+    -o-background-size: cover; */
+    
 }
 
 .navigation {
@@ -217,7 +236,7 @@ footer p {
     margin: auto;
     margin-top: 4em;
     margin-bottom: 5em;
-    background-color: white;
+    background-color:floralwhite;
     border-radius: 15px;
     border: 12px solid rgb(255, 255, 255, 0.5;
     );
@@ -283,7 +302,8 @@ footer p {
     margin-bottom: 4em;
     padding-top: 2em;
     text-align: center;
-    background-color: white;
+    background-color:floralwhite;
+    opacity: 0.9;
     width: 35%;
     border-radius: 15px;
     border: 12px solid rgb(255, 255, 255, 0.5);
@@ -297,8 +317,9 @@ footer p {
 .signIn-form img {
     margin: auto;
     display: flex;
-    height: 7em;
+    height: 20%;
     width: 25%;
+    
 }
 
 .signIn-form input {
@@ -397,6 +418,11 @@ footer p {
     .favourite-table thead td {
         height: 2em;
         font-size: 1.5em;
+    }
+    
+    .signIn-form img {
+        width: 25%;
+        height:14%;
     }
 }
 
@@ -521,6 +547,11 @@ footer p {
     .favourite-table td {
         height: 1.1em;
         font-size: 1.1em;
+    }
+    
+    .signIn-form img {
+        width: 25%;
+        height:15%;
     }
    
 }
