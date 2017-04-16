@@ -7,15 +7,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZq3N4iOcyQ0Bi7UC2FukTPMWbULtBuFo&libraries=places"></script>
 
+
     <title>FindTheLoc</title>
 </head>
 
 <body ng-app='myApp'>
-    <div class="backgroundDiv"> 
-        </div>
-    <video poster="myStyleFile/images/screenVideo.png" id="bgvid" playsinline autoplay muted loop>
+    <div class="backgroundDiv">
+    </div>
+    <video poster="myStyleFile/images/screen.png" id="bgvid" playsinline autoplay muted loop>
         <source src="myStyleFile/images/screenVideo.mp4" type="video/mp4">
-        <source src="myStyleFile/images/screenVideo" type="video/webm">
     </video>
 
     <div ng-controller='MainController'>
@@ -33,45 +33,32 @@
             <br/>
         </form>
 
-        <!--   <div id="checkboxes">
-
-                    <label>Φίλτρο Αναζήτησης</label> <br>
-                    <ul>
-                        <li><input type="checkbox"> Τράπεζες</li>
-                        <li><input type="checkbox"> Αεροδρόμια</li>
-                        <li><input type="checkbox"> Μουσεία</li>
-                        <li><input type="checkbox"> Νοσοκομεία</li>
-                        <li><input type="checkbox"> Γκαλερί</li>
-                        <li><input type="checkbox"> Μπάρ</li>
-                        <li><input type="checkbox"> Καφετέριες</li>
-                        <li><input type="checkbox"> Νοσοκομεία</li>
-                        <li><input type="checkbox"> Εκκλησίες</li>
-                        <li><input type="checkbox"> Βενζινάδικα</li>
-                        <li><input type="checkbox"> Γυμναστήρια</li>
-                        <li><input type="checkbox"> Στάσεις ταξί</li>
-                        <li><input type="checkbox"> Εστιατόρια</li>
-                        <li><input type="checkbox"> Γήπεδα</li>
-                        <li><input type="checkbox"> Πανεπιστήμια</li>
-                    </ul>
-
-        </div> -->
+        <div id="checkDiv" class="checkboxInitialClass">
+            <h4>Φίλτρο Αναζήτησης</h4>
+            <hr>
+            <label id="checkboxes" ng-repeat="category in categories track by $index">        
+                <input type="checkbox" ng-model="checkboxValue" ng-change="change(checkboxValue,category)">{{category}}              
+        </label>
+        </div>
 
         <div class="maincontainer">
 
-            <div class="pic-container" data-ng-repeat="place in places">
+            <div class="pic-container" data-ng-repeat="place in places track by $index">
 
                 <p>{{place.name}}</p>
                 <img data-ng-src="{{place.img}}" />
 
             </div>
         </div>
+
     </div>
     <footer>
         <p>FindTheLoc Copyrights 2017</p>
     </footer>
-       
     <script type="text/javascript" src="javascriptFiles/app.js"></script>
-    <script type="text/javascript" src="javascriptFiles/Controllers/MainController.js"></script>
+    <script type="text/javascript" src="javascriptFiles/Services/translateService.js"></script>
+    <script type="text/javascript" src="javascriptFiles/Controllers/mainController.js"></script>
+    <script type="text/javascript" src="javascriptFiles/dom.js"></script>
 </body>
 
 </html>
