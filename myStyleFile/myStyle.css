@@ -5,12 +5,13 @@
     }
     
     html {
-        position: relative;
-        min-height: 100%;
+       position: relative;
+       min-height: 100%; 
     }
     
     body {
         margin: 0 0 50px;
+       
     }
     
     .navigation {
@@ -91,7 +92,7 @@
     
     .maincontainer {
         margin-left: 17em;
-        margin-bottom: 5em;
+        margin-bottom: 5em;   
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -101,16 +102,17 @@
     .checkboxInitialClass {
         width: 15%;
         margin-left: 0.5em;
+        margin-bottom: 10em;
         top: 20em;
         position: absolute;
         float: left;
         margin-left: 2px;
         display: none;
+         -moz-column-count:2; /* Firefox */
+        -webkit-column-count:2; /* Safari and Chrome */
+         column-count:2;
     }
     
-    .checkboxInitialClass h4 {
-        visibility: hidden;
-    }
     
     @keyframes slideInFromDown {
         0% {
@@ -133,7 +135,8 @@
     .checkDivStyle {
         width: 15%;
         margin-left: 1em;
-        position: absolute;
+        position: flex;
+        margin-bottom: 5em;
         padding-bottom: 5em;
         top: 20em;
         display: flex;
@@ -148,14 +151,13 @@
         /* for IE9+, Firefox 4+, Opera, Chrome */
         background-color: white;
         display: block;
-        visibility: visible;
         animation: 1s ease-out 0s 1 slideInFromDown;
     }
-    
+
+ 
     .checkDivStyle h4 {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         margin-left: 5px;
         font-family: arial;
         color: darkslategray;
@@ -231,7 +233,8 @@
     }
     
     footer {
-        position: absolute;
+        
+        position:absolute;
         left: 0px;
         bottom: 0px;
         height: 50px;
